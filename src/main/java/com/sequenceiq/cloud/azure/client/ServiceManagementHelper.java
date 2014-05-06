@@ -96,17 +96,15 @@ public class ServiceManagementHelper {
 
     public static void main(String[] args) throws IOException, UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
 
-
-        String subscriptionId = "id";
-        String keyStorePath = "//Users//sample//prj//WindowsAzureKeyStore.jks";
-        String keyStorePassword = "test123";
+        String subscriptionId = "CHANGE_ME!";
+        String keyStorePath = "//Users//matyix//prj//WindowsAzureKeyStore.jks";
+          String keyStorePassword = "CHANGE_ME!";
         String url = "";
 
         //List locations
         url = String.format("https://management.core.windows.net/%s/locations", subscriptionId);
         String response = processGetRequest(new URL(url), keyStorePath, keyStorePassword);
         System.out.println(response);
-
 
     }
 }
