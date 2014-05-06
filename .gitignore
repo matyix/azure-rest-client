@@ -1,6 +1,22 @@
-.classpath
-.settings
-.project
+
 target
 lib
 .idea/
+
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# eclipse
+.settings
+.classpath
+.project
+
+# gradle
+.gradle
+bin
+
+#osx
+.DS\_Store
